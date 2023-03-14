@@ -185,7 +185,7 @@ p {
 }
 
 
-                      /* PORTAFOLIO */
+                      /* Imagen */
 
 
 .circular--square {
@@ -206,8 +206,6 @@ p {
     transform: translateY(0);
   }
 }
-
-
 
 .circular--square {
   position: relative;
@@ -337,30 +335,40 @@ ul {
   transform: scale(2.1);
 }
 
+    /*Otras Redes G-A-S--*/
 
-  /*------CODIGO PENDIENTE------*/
-/* section {
+.slider {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
   display: flex;
-  width: 600px;
-  height: 430px;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
 }
 
-section img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
+.slider .slide {
+  width: 200px;
 }
 
-section img:hover {
-  cursor: pointer;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-} */
+.slider .slide img {
+  width: 100%;
+}
 
-
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
             /* SERVICIOS */
             
 
@@ -451,6 +459,25 @@ section img:hover {
 
 p {
   cursor: pointer;
+}
+
+small {
+  font-size: 17px;
+  background-color: #34B0BE;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .skill__info {
