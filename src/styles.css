@@ -190,7 +190,8 @@ p {
 
 .circular--square {
   width: 35vw;
-  animation: floatImage 4s ease-in-out infinite;
+  animation: floatImage 20s ease in-out infinite;
+  /* animation: floatImage 20s ease-in-out infinite; */
 }
 
 @keyframes floatImage {
